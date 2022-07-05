@@ -1,0 +1,90 @@
+/* importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300&display=swap');
+
+
+/* Colour variables */
+:root {
+  --primary-font-color: #ded9d9;
+  --secondary-font-color: #b5b5b5;
+}
+
+/* Master styles */
+* {
+  z-index: 5;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  background: url('./pexels-pixabay-531321.jpeg');
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Overlay styles */
+
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgb(0, 0, 0);
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left {
+  align-items: center;
+}
+
+.left .router {
+  display: flex;
+}
+
+.left .router .router-item {
+  list-style: none;
+  margin-right: 19px;
+}
+
+.left .router .router-item a {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  transition: 0.2s ease-in-out;
+}
+
+.left .router .router-item a:hover {
+  color: var(--secondary-font-color);
+  border-bottom: 1px solid var(--secondary-font-color);
+}
+
+.right {
+  margin: auto 18px;
+
+}
+
+.right .branding {
+  text-transform: uppercase;
+  color: var(--primary-font-color);
+  transition: 0.2s ease-in;
+  cursor: pointer;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+}
+
+.right .branding:hover {
+  color: var(--secondary-font-color);
+  border-bottom: var(--secondary-font-color) 1px solid;
+}
